@@ -3,7 +3,7 @@ import {
   ThemedLayoutV2,
   notificationProvider,
 } from "@refinedev/chakra-ui";
-import { GitHubBanner, Refine } from "@refinedev/core";
+import { Refine } from "@refinedev/core";
 import { RefineKbar, RefineKbarProvider } from "@refinedev/kbar";
 import routerProvider, {
   DocumentTitleHandler,
@@ -50,8 +50,8 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
 
   return (
     <>
-      <GitHubBanner />
-      <RefineKbarProvider>
+
+      <RefineKbarProvider >
         {/* You can change the theme colors here. example: theme={RefineThemes.Magenta} */}
         <ChakraProvider theme={RefineThemes.Blue}>
           <Refine
